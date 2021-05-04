@@ -42,6 +42,7 @@ namespace TP4_MonteCarlo_grupo7
 
         private void cargarTablaResultados()
         {
+         
             resultados.Columns.Add("Reloj (semanas)");
             resultados.Columns.Add("RND Demanda");
             resultados.Columns.Add("Demanda");
@@ -79,6 +80,9 @@ namespace TP4_MonteCarlo_grupo7
 
         private void hacerSimulacion(int cantSimulaciones, int desde, int hasta, GeneradorUniformeLenguaje generador)
         {
+            resultados.Clear();
+            resultados2.Clear();
+
             row1 = resultados.NewRow();
             row1[0] = 0;
             row1[9] = 0;
